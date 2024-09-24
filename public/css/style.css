@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Genel stil */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #B40202;
+}
+
+/* Menü listesi */
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hamburger menü */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+main{
+    background-color: #EEEEEE;
+}
+
+.logo img {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    .logo img {
+        margin-left: 10px;
+    }
+
+    .gallery-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact {
+        display: block !important;
+    }
+
+    .google-maps {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+
+    .google-maps {
+        width: 100% !important;
+    }
+
+    .contact {
+        display: block !important;
+    }
+
+    .logo img {
+        margin-left: 0px;
+        width: 150px;
+        height: 100%;
+    }
+
+    .intro {
+        padding: 20px !important;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .intro-text {
+        text-align: left !important;
+    }
+
+    .gallery-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        width: 44% !important;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border: 1px solid #e60000;
+        width: 100%;
+    }
+
+    .nav-list li {
+        padding: 1px;
+        border-radius: 4px;
+        margin-top: 2px;
+    }
+
+    .nav-list li a {
+        color: #fff;
+    }
+
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/imgs/intro-bg.png');
+    background-size: cover;
+    padding: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    max-width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: large;
+}
+
+.intro-button {
+    max-width: 30%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: #e60000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+/* Hakkımızda Kısmı */
+.about-us {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    color: #ffffff;
+}
+
+.about-us p {
+    color: #333;
+    font-size: large;
+    padding: 10px;
+}
+
+/* Galeri Kısmı */
+.gallery {
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #B40202;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    width: 24%;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+hr {
+    border: 1px solid #e60000;
+    width: 2px;
+    height: 100vh;
+}
+
+
+/* Hizmetler Sayfası */
+.services {
+    padding: 10px;
+}
+
+.services h2 {
+    color: #B40202;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.services img{
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+/* Hakkımızda Sayfası */
+
+.about {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    color: #B40202;
+}
+
+.about p {
+    color: #333;
+    font-size: large;
+    padding: 10px 30px;
+}
+
+.about img {
+    width: 75%;
+}
+
+/* İletişim Sayfası */
+
+.contact {
+    background-color: #EEEEEE;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact h2 {
+    color: #B40202;
+}
+
+.contact p {
+    color: #B40202;
+    font-size: large;
+}
+
+.google-maps {
+    width: 50%;
+    height: 300px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+}
