@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Gallery;
+use App\Models\Galeri;
 
 class HomepageController extends Controller
 {
@@ -12,7 +12,7 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        $photos = Gallery::all();
+        $photos = Galeri::all();
 
         return view('home', compact('photos'));
     }
