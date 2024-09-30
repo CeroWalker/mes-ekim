@@ -5,14 +5,18 @@ use App\Http\Controllers\HomepageController;
 
 Route::resource('/', HomepageController::class);
 
-Route::get('/hizmetler', function () {
+Route::get('hizmetler', function () {
     return view('services');
 });
 
-Route::get('/hakkimizda', function () {
+Route::get('hakkimizda', function () {
     return view('about');
 });
 
-Route::get('/iletisim', function () {
+Route::get('iletisim', function () {
     return view('contact');
+});
+
+Route::get('randevu', function () {
+    return redirect('https://forms.gle/absM7sZnKeAqMqYt9');
 });

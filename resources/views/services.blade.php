@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmetler - Saç Ekim Merkezi</title>
+    <title>Hizmetler - MES Saç Ekim Danışmanlığı</title>
     @include('reqs/head')
 </head>
 <body>
